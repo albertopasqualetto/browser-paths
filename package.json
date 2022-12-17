@@ -1,0 +1,33 @@
+{
+  "name": "locate-browsers",
+  "version": "1.0.0",
+  "author": {
+    "name": "Alberto Pasqualetto",
+    "email": "39854348+albertopasqualetto@users.noreply.github.com"
+  },
+  "description": "",
+  "repository": "github:albertopasqualetto/locate-browsers/",
+  "bugs": "https://github.com/albertopasqualetto/locate-browsers/issues",
+  "keywords": [
+    "locate",
+    "browsers",
+    "chrome",
+    "firefox",
+    "edge",
+    "chromium",
+    "brave",
+    "opera",
+    "vivaldi",
+    "safari",
+    "browser",
+    "path",
+    "location",
+    "find",
+    "search"
+  ],
+  "license": "Apache-2.0",
+  "main": "./index.js",
+  "dependencies": {
+    "which": "^2.0.2"
+  }
+}
