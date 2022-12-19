@@ -5,7 +5,7 @@
     "name": "Alberto Pasqualetto",
     "email": "39854348+albertopasqualetto@users.noreply.github.com"
   },
-  "description": "",
+  "description": "A simple package that retrieves the path of the most known browsers (if installed), no matter the OS",
   "repository": "github:albertopasqualetto/locate-browsers/",
   "bugs": "https://github.com/albertopasqualetto/locate-browsers/issues",
   "keywords": [
@@ -15,15 +15,8 @@
     "firefox",
     "edge",
     "chromium",
-    "brave",
-    "opera",
-    "vivaldi",
-    "safari",
     "browser",
-    "path",
-    "location",
-    "find",
-    "search"
+    "path"
   ],
   "license": "Apache-2.0",
   "main": "./index.js",
