@@ -8,7 +8,7 @@ function testPath(defaultPath) {
 	}
 
 	try {
-		var homePath = path.join(process.env.HOME, defaultPath);
+		let homePath = path.join(process.env.HOME, defaultPath);
 		fs.accessSync(homePath);
 		return homePath;
 	} catch (e) {

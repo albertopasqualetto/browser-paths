@@ -14,7 +14,7 @@ function getPath(suffix) {
 		process.env["PROGRAMFILES(X86)"],
 	];
 
-	for (const prefix in prefixes) {
+	for (const prefix of prefixes) {
 		try {
 			outDirectory = path.join(prefix, suffix);
 			fs.accessSync(outDirectory);
