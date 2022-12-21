@@ -1,0 +1,7 @@
+.gitignore
+
+# Dependency directories
+node_modules/
+
+# IDE files
+.idea/
