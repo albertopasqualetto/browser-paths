@@ -1,13 +1,13 @@
 {
-  "name": "locate-browsers",
+  "name": "browser-paths",
   "version": "1.0.0",
   "author": {
     "name": "Alberto Pasqualetto",
     "email": "39854348+albertopasqualetto@users.noreply.github.com"
   },
   "description": "A simple package that retrieves the path of the most known browsers (if installed), no matter the OS",
-  "repository": "github:albertopasqualetto/locate-browsers/",
-  "bugs": "https://github.com/albertopasqualetto/locate-browsers/issues",
+  "repository": "github:albertopasqualetto/browser-paths/",
+  "bugs": "https://github.com/albertopasqualetto/browser-paths/issues",
   "keywords": [
     "locate",
     "browsers",
