@@ -1,6 +1,6 @@
 {
   "name": "browser-paths",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": {
     "name": "Alberto Pasqualetto",
     "email": "39854348+albertopasqualetto@users.noreply.github.com"
@@ -21,6 +21,6 @@
   "license": "Apache-2.0",
   "main": "./index.js",
   "dependencies": {
-    "which": "^2.0.2"
+    "which": "^3.0.1"
   }
 }
