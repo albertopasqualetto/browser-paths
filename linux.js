@@ -7,9 +7,7 @@ function getBin(commands) {
 		return null;
 	}
 	for (let i = 0; i < commands.length; i++) {
-		if (which.sync(commands[i])) {
-			return which.sync(commands[i], {nothrow: true})
-		}
+		return which.sync(commands[i], {nothrow: true});
 	}
 
 	return null;
