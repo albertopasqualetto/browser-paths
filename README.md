@@ -8,6 +8,17 @@ If browser is not found, it returns null.
 
 Other browsers (Opera, Brave, ...) will be added in future, feel free to help me!
 
+## Install
+```
+npm i browser-paths
+```
+
+## Usage
+```javascript
+import { getChromiumPath } from "browser-paths";    # or any other supported browser
+path = getChromiumPath()
+```
+
 ## Supported Browsers
 
 - Google Chrome
