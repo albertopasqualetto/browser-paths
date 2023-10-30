@@ -11,6 +11,10 @@ function getEdgePath() {
 	return windows.getEdge() || linux.getEdge() || macos.getEdge() || null;
 }
 
+function getThoriumPath() {
+	return linux.getThorium() || null;	// TODO add Thorium paths in Windows and MacOs
+}
+
 function getChromiumPath() {
 	//If not found, fallbacks to another Chromium-based browser
 	//(only on linux there is a "real" chromium possible install path)
@@ -23,4 +27,4 @@ function getFirefoxPath() {
 }
 
 
-module.exports = { getChromePath, getEdgePath, getChromiumPath, getFirefoxPath };
+module.exports = { getChromePath, getEdgePath, getThoriumPath, getChromiumPath, getFirefoxPath };

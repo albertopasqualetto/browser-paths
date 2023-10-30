@@ -2,7 +2,7 @@ var which = require('which');
 
 
 function getBin(commands) {
-	// Don't run these checks on win32
+	// Don't run these checks if not on linux
 	if (process.platform !== 'linux') {
 		return null;
 	}
@@ -20,8 +20,12 @@ function getEdge() {
 	return getBin(['microsoft-edge-stable']);
 }
 
+function getThorium() {
+	return getBin(['thorium-browser']);
+}
+
 function getChromium() {
-	return getBin(['chromium-browser', 'chromium']) || getChrome() || getEdge();
+	return getBin(['chromium-browser', 'chromium']) || getChrome() || getEdge() || getThorium();
 }
 
 function getFirefox() {
@@ -29,4 +33,4 @@ function getFirefox() {
 }
 
 
-module.exports = { getChrome, getEdge, getChromium, getFirefox };
+module.exports = { getChrome, getEdge, getThorium, getChromium, getFirefox };
