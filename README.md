@@ -23,5 +23,6 @@ path = getChromiumPath()
 
 - Google Chrome
 - Microsoft Edge
+- Thorium Browser (only linux)
 - Chromium (fallback on the other generic chromium based browsers)
 - Mozilla Firefox
