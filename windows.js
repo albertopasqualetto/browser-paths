@@ -30,6 +30,10 @@ function getChrome() {
 	return getPath("\\Google\\Chrome\\Application\\chrome.exe");
 }
 
+function getThorium() {
+	return getPath("\\Thorium\\Application\\thorium.exe");
+}
+
 function getEdge() {
 	//In fact it only is in Program Files (x86)
 	return getPath("\\Microsoft\\Edge\\Application\\msedge.exe");
@@ -37,7 +41,7 @@ function getEdge() {
 
 function getChromium() {
 	//There is no chromium default install path for windows
-	return getChrome() || getEdge();
+	return getChrome() || getEdge() || getThorium();
 }
 
 
