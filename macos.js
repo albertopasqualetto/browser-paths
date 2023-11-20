@@ -29,10 +29,13 @@ function getEdge() {
 	return testPath("/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge");
 }
 
+function getThorium() {
+	return testPath("/Applications/Thorium.app/Contents/MacOS/Thorium");
+}
 
 function getChromium() {
 	//There is no chromium default install path for windows
-	return getChrome() || getEdge();
+	return getChrome() || getEdge() || getThorium();
 }
 
 function getFirefox() {
@@ -40,4 +43,4 @@ function getFirefox() {
 }
 
 
-module.exports = { getChrome, getEdge, getChromium, getFirefox };
+module.exports = { getChrome, getEdge, getThorium, getChromium, getFirefox };
