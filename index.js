@@ -12,7 +12,7 @@ function getEdgePath() {
 }
 
 function getThoriumPath() {
-	return linux.getThorium() || null;	// TODO add Thorium paths in Windows and MacOs
+	return windows.getThorium() || linux.getThorium() || macos.getThorium() || null;
 }
 
 function getChromiumPath() {
