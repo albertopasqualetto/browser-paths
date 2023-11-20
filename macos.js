@@ -43,4 +43,4 @@ function getFirefox() {
 }
 
 
-module.exports = { getChrome, getEdge, getChromium, getFirefox };
+module.exports = { getChrome, getEdge, getThorium, getChromium, getFirefox };
