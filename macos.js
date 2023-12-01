@@ -29,6 +29,10 @@ function getEdge() {
 	return testPath("/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge");
 }
 
+function getSafari() {
+	return testPath("/Applications/Safari.app/Contents/MacOS/Safari");
+}
+
 function getThorium() {
 	return testPath("/Applications/Thorium.app/Contents/MacOS/Thorium");
 }
