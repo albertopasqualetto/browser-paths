@@ -26,5 +26,10 @@ function getFirefoxPath() {
 	return windows.getFirefox() || linux.getFirefox() || macos.getFirefox() || null;
 }
 
+function getSafariPath() {
+	//Only for mac
+	return macos.getSafari() || null;
+}
 
-module.exports = { getChromePath, getEdgePath, getThoriumPath, getChromiumPath, getFirefoxPath };
+
+module.exports = { getChromePath, getEdgePath, getThoriumPath, getChromiumPath, getFirefoxPath, getSafariPath };
