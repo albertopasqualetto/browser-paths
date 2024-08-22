@@ -1,13 +1,15 @@
 var which = require('which');
 
-
 function getBin(commands) {
 	// Don't run these checks if not on linux
 	if (process.platform !== 'linux') {
 		return null;
 	}
+	// Check each command separately
+	let path = null;
 	for (let i = 0; i < commands.length; i++) {
-		return which.sync(commands[i], {nothrow: true});
+		path = which.sync(commands[i], {nothrow: true});
+		if (path) return path;
 	}
 
 	return null;
