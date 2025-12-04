@@ -27,7 +27,11 @@ function getThorium() {
 }
 
 function getChromium() {
-	return getBin(['chromium-browser', 'chromium']) || getChrome() || getEdge() || getThorium();
+	return getBin(['chromium-browser', 'chromium']) || getChrome() || getEdge() || getThorium() || getBrave();
+}
+
+function getBrave() {
+	return getBin(['brave-browser', 'brave-browser-stable', 'brave']);
 }
 
 function getFirefox() {
@@ -35,4 +39,4 @@ function getFirefox() {
 }
 
 
-module.exports = { getChrome, getEdge, getThorium, getChromium, getFirefox };
+module.exports = { getChrome, getEdge, getThorium, getBrave, getChromium, getFirefox };

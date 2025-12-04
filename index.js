@@ -15,6 +15,10 @@ function getThoriumPath() {
 	return windows.getThorium() || linux.getThorium() || macos.getThorium() || null;
 }
 
+function getBravePath() {
+	return windows.getBrave() || linux.getBrave() || macos.getBrave() || null;
+}
+
 function getChromiumPath() {
 	//If not found, fallbacks to another Chromium-based browser
 	//(only on linux there is a "real" chromium possible install path)
@@ -32,4 +36,4 @@ function getSafariPath() {
 }
 
 
-module.exports = { getChromePath, getEdgePath, getThoriumPath, getChromiumPath, getFirefoxPath, getSafariPath };
+module.exports = { getChromePath, getEdgePath, getThoriumPath, getBravePath, getChromiumPath, getFirefoxPath, getSafariPath };
