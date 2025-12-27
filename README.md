@@ -6,8 +6,6 @@ A simple package that retrieves the path of the most known browsers (if installe
 
 If browser is not found, it returns null.
 
-Other browsers (Opera, Brave, ...) will be added in future, feel free to help me!
-
 ## Install
 ```
 npm i browser-paths
@@ -15,8 +13,9 @@ npm i browser-paths
 
 ## Usage
 ```javascript
-import { getChromiumPath } from "browser-paths";    # or any other supported browser
+import { getChromiumPath, getBravePath } from "browser-paths";    # or any other supported browser
 path = getChromiumPath()
+bravePath = getBravePath()
 ```
 
 ## Supported Browsers
@@ -24,5 +23,6 @@ path = getChromiumPath()
 - Google Chrome
 - Microsoft Edge
 - Thorium Browser
+- Brave Browser
 - Chromium (fallback on the other generic chromium based browsers)
 - Mozilla Firefox

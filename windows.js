@@ -41,13 +41,17 @@ function getEdge() {
 
 function getChromium() {
 	//There is no chromium default install path for windows
-	return getChrome() || getEdge() || getThorium();
+	return getChrome() || getEdge() || getThorium() || getBrave();
 }
 
+
+function getBrave() {
+	return getPath("\\BraveSoftware\\Brave-Browser\\Application\\brave.exe");
+}
 
 function getFirefox() {
 	return getPath("\\Mozilla Firefox\\firefox.exe");
 }
 
 
-module.exports = {getChrome, getEdge, getThorium, getChromium, getFirefox};
+module.exports = {getChrome, getEdge, getThorium, getBrave, getChromium, getFirefox};
