@@ -6,7 +6,7 @@
     "email": "39854348+albertopasqualetto@users.noreply.github.com"
   },
   "description": "A simple package that retrieves the path of the most known browsers (if installed), no matter the OS",
-  "repository": "github:albertopasqualetto/browser-paths/",
+  "repository": "https://github.com/albertopasqualetto/browser-paths",
   "bugs": "https://github.com/albertopasqualetto/browser-paths/issues",
   "keywords": [
     "locate",
