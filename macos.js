@@ -38,8 +38,12 @@ function getThorium() {
 }
 
 function getChromium() {
-	//There is no chromium default install path for windows
-	return getChrome() || getEdge() || getThorium();
+	//There is no chromium default install path for macOS
+	return getChrome() || getEdge() || getThorium() || getBrave();
+}
+
+function getBrave() {
+	return testPath("/Applications/Brave Browser.app/Contents/MacOS/Brave Browser");
 }
 
 function getFirefox() {
@@ -47,4 +51,4 @@ function getFirefox() {
 }
 
 
-module.exports = { getChrome, getEdge, getThorium, getChromium, getFirefox, getSafari };
+module.exports = { getChrome, getEdge, getThorium, getBrave, getChromium, getFirefox, getSafari };
